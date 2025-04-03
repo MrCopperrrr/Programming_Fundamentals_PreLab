@@ -1,0 +1,11 @@
+//1
+
+void reverse(char str[]) {
+    int lenght = strlen(str);
+    for (int i = 0; i < lenght/2; i++) {
+        char temp = str[i];
+        str[i] = str[lenght - i - 1];
+        str[lenght - i - 1] = temp;
+    }
+}
+  

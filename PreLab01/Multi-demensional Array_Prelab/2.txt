@@ -1,0 +1,14 @@
+//2
+int diagonalProduct(int arr[][1000], int row, int col) {
+    int product = 1;
+
+    if (row != col) {
+        return 0;
+    }
+
+    for (int i = 0; i < row; ++i) {
+        product *= arr[i][i];
+    }
+
+    return product; 
+}
